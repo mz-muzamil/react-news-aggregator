@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .main {
+    flex-basis: auto;
+  }
+  /* IE10 */
+  *::-ms-backdrop,
+  .main {
+    flex-basis: auto;
+  }
+  /* IE11 */
+}
